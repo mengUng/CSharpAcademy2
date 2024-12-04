@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35514.174
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercice2_chagementEtats", "Exercice2_chagementEtats\Exercice2_chagementEtats.csproj", "{ACE7D7B8-D593-42F3-95F7-11471015744D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpAcademy.TestsUnit", "CSharpAcademy.TestsUnit\CSharpAcademy.TestsUnit.csproj", "{993F52B6-8862-4D3C-B0CB-B79192824734}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ACE7D7B8-D593-42F3-95F7-11471015744D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACE7D7B8-D593-42F3-95F7-11471015744D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACE7D7B8-D593-42F3-95F7-11471015744D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACE7D7B8-D593-42F3-95F7-11471015744D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{993F52B6-8862-4D3C-B0CB-B79192824734}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{993F52B6-8862-4D3C-B0CB-B79192824734}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{993F52B6-8862-4D3C-B0CB-B79192824734}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{993F52B6-8862-4D3C-B0CB-B79192824734}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
