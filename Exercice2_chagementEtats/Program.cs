@@ -19,6 +19,7 @@ public class Program
         // Porte verrouilée
         porte.ChangerEtat(new PorteVerrouillee());
 
+        // Afficher l'historique des changements d'états 
         porte.AfficherEtatHistorique();
     }
 
