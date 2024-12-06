@@ -20,7 +20,7 @@ namespace CSharpAcademy.TestsUnit
 
             // Assert
             var output = consoleOutput.ToString();
-            Assert.Contains("PorteFermee", output);
+            Assert.Contains("[PorteFermee]", output);
             
         }
 
@@ -43,8 +43,8 @@ namespace CSharpAcademy.TestsUnit
 
             // Assert
             var output = consoleOutput.ToString();
-            Assert.Contains("PorteFermee", output);
-            Assert.Contains("PorteOuverte", output);
+            Assert.Contains("[PorteFermee]", output);
+            Assert.Contains("[PorteOuverte]", output);
         }
 
         [Fact]
@@ -68,9 +68,9 @@ namespace CSharpAcademy.TestsUnit
 
             // Assert
             var output = consoleOutput.ToString();
-            Assert.Contains("PorteFermee", output);
-            Assert.Contains("PorteOuverte", output);
-            Assert.Contains("PorteVerrouillee", output);
+            Assert.Contains("[PorteFermee]", output);
+            Assert.Contains("[PorteOuverte]", output);
+            Assert.Contains("[PorteVerrouillee]", output);
         }
     }
 }

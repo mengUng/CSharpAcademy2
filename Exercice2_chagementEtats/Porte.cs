@@ -11,9 +11,9 @@ public partial class Porte
         _etatActuel = initialState;
         _historique = new EtatHistorique();
 
-        _historique.AjouterHistorique(_etatActuel.GetType().Name);
+        _historique.AjouterHistorique(_etatActuel);
 
-        Console.WriteLine($"État initial de la porte : {_etatActuel.GetType().Name}");
+        Console.WriteLine($"État initial de la porte : {_etatActuel.GetDescriptionEtat()}");
     }
 
     // Permet de changer l'état de la porte
@@ -21,7 +21,7 @@ public partial class Porte
     {
         _etatActuel = nouvelEtat;
 
-        _historique.AjouterHistorique(_etatActuel.GetType().Name);
+        _historique.AjouterHistorique(_etatActuel);
         _etatActuel.Handle(this);  // Appel de la classe concrète qui implémente l'interface IEtat
 
     }

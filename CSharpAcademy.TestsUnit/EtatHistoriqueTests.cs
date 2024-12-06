@@ -7,7 +7,7 @@
         {
             // Arrange
             var historique = new EtatHistorique();
-            var etat = "PorteFermee";
+            var etat = new PorteFermee();
 
             // Act
             historique.AjouterHistorique(etat);
@@ -20,7 +20,7 @@
 
             // Assert
             var output = consoleOutput.ToString();
-            Assert.Contains("PorteFermee", output);
+            Assert.Contains("[PorteFermee]", output);
         }
 
         [Fact]
@@ -28,9 +28,9 @@
         {
             // Arrange
             var historique = new EtatHistorique();
-            historique.AjouterHistorique("PorteFermee");
-            historique.AjouterHistorique("PorteOuverte");
-            historique.AjouterHistorique("PorteVerrouillee");
+            historique.AjouterHistorique(new PorteFermee());
+            historique.AjouterHistorique(new PorteOuverte());
+            historique.AjouterHistorique(new PorteVerrouillee());
 
             // Redirect Console Output to Verify Affichage
             var consoleOutput = new StringWriter();
@@ -41,9 +41,9 @@
 
             // Assert
             var output = consoleOutput.ToString();
-            Assert.Contains("PorteFermee", output);
-            Assert.Contains("PorteOuverte", output);
-            Assert.Contains("PorteVerrouillee", output);
+            Assert.Contains("[PorteFermee]", output);
+            Assert.Contains("[PorteOuverte]", output);
+            Assert.Contains("[PorteVerrouillee]", output);
         }
     }
 }
